@@ -1,0 +1,14 @@
+The following CSS code snippet demonstrates a common issue where the specificity of selectors can lead to unexpected behavior.  The intention is to style both paragraphs, but only the second one is styled because of the ID selector's higher specificity:
+
+```css
+p {
+  color: blue;
+}
+
+#myParagraph {
+  color: red;
+}
+
+<p>This paragraph should be blue.</p>
+<p id="myParagraph">This paragraph should be red.</p>
+```
